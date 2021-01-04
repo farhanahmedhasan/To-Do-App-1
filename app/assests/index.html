@@ -2,14 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>To Do App One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>To Do App One</title>
+		<!--FontAwesomeKit-->
+		<script src="https://kit.fontawesome.com/341970e6e4.js" crossorigin="anonymous"></script>
+		<!--GoogleFont-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+		<!--MainCSS-->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    
-    <script src="./scripts/app.js"></script>
+<!--Main Container-->
+	<div class="container">
+
+		<!--Header Code-->
+		<div class="header">
+			<!--Div For Refresh Icon-->
+			<div class="clear">
+				<i class="fas fa-sync-alt"></i>
+			</div>
+			<!--Showing Todays Date-->
+			<div id="date">4 october</div>
+		</div>
+
+		<div class="content">
+			<ul id="list">
+				<!--List Code Gonna Inject BY HTML Cause List will Contain What User Types-->
+				<li class="item">
+					<i class="far fa-circle complete"></i>
+					<p class="text">Drink Coffie</p>
+					<i class="fas fa-trash delete"></i>
+				</li>
+				<li class="item">
+					<i class="far fa-circle complete"></i>
+					<p class="text">Drink Coffie</p>
+					<i class="fas fa-trash delete"></i>
+				</li>
+			</ul>
+		</div>
+
+		<!--Input Box-->
+		<div class="add-item">
+			<i class="fas fa-plus-circle"></i>
+			<input type="text" id="input" placeholder="Add A ToDo">
+		</div>
+	</div>
+
+<script src="./scripts/app.js"></script>
 </body>
 </html>
