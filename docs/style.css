@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/*Main Container*/
+.container {
+  padding: 10px;
+  width: 380px;
+  margin: 0 auto;
+}
+
+/*------------------------HEADER------------------------*/
+
+/*For The Header Section(Image Section)*/
+.header {
+  background: url(bg.jpg);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 380px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+
+/*For Clear Icon*/
+.clear {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.clear i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.clear:hover i {
+  cursor: pointer;
+  text-shadow: 2px 3px 5px #000;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*For Date Text*/
+.header #date {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/*----------------------------CONTENT-----------------------*/
+.content {
+  width: 380px;
+  height: 350px;
+  max-height: 350px;
+  overflow: auto; /*This will create the scroll bar*/
+  background-color: rgb(235, 229, 229);
+}
+/*This Will Remove the scrollbar from the content*/
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+/*Positioning Items And Font Awesome Icons*/
+.item {
+  width: 380px;
+  height: 45px;
+  min-height: 45px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item i.complete {
+  position: absolute;
+  font-size: 1.5rem;
+  padding-left: 5px;
+  left: 15px;
+  top: 10px;
+}
+.item i.complete:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*This Class will load when user clicks the circle icon*/
+.fa-check-circle {
+  color: rgb(42, 212, 42);
+}
+
+.item p.text {
+  position: absolute;
+  font-size: 1.2rem;
+  left: 50px;
+  top: 10px;
+  max-width: 285px;
+}
+
+/*This Class will load when user clicks the circle icon*/
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.item i.delete {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 15px;
+  top: 10px;
+}
+.item i.delete:hover {
+  cursor: pointer;
+  color: rgb(228, 19, 19);
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+/*-------------------Add Input----------------------*/
+.add-item {
+  position: relative;
+  width: 380px;
+  background-color: rgb(235, 229, 229);
+  padding: 20px 10px 65px 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 15px 15px;
+}
+.add-item i {
+  font-size: 1.8rem;
+  color: #4162f6;
+  position: absolute;
+  top: 27px;
+}
+.add-item input {
+  left: 50px;
+  position: absolute;
+  height: 40px;
+  width: 310px;
+  background-color: #fff;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.add-item input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #4162f6;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+}
